@@ -13,7 +13,7 @@ public class IntoArabic {
                 char ConvertToDec = romanNumber.charAt(i);
 
                 switch (ConvertToDec) {
-                    case 'M'|'m':
+                    case 'M':
                         answer = processNumeral(1000, previouseFigure, answer);
                         previouseFigure = 1000;
                         mcounter++;
@@ -21,7 +21,7 @@ public class IntoArabic {
                         if (mcounter > 3) throw new Exception("Неверное римское число");
                         break;
 
-                    case 'D'|'d':
+                    case 'D':
                         answer = processNumeral(500, previouseFigure, answer);
                         previouseFigure = 500;
                         dcounter++;
@@ -29,7 +29,7 @@ public class IntoArabic {
                         if (dcounter > 3) throw new Exception("Неверное римское число");
                         break;
 
-                    case 'C'|'c':
+                    case 'C':
                         answer = processNumeral(100, previouseFigure, answer);
                         previouseFigure = 100;
                         ccounter++;
@@ -37,7 +37,7 @@ public class IntoArabic {
                         if (ccounter > 3) throw new Exception ("Неверное римское число");
                         break;
 
-                    case 'L'|'l':
+                    case 'L':
                         answer = processNumeral(50, previouseFigure, answer);
                         previouseFigure = 50;
                         lcounter++;
@@ -45,7 +45,7 @@ public class IntoArabic {
                         if (lcounter > 3) throw new Exception("Неверное римское число");
                         break;
 
-                    case 'X'|'x':
+                    case 'X':
                         answer = processNumeral(10, previouseFigure, answer);
                         previouseFigure = 10;
                         xcounter++;
@@ -53,7 +53,7 @@ public class IntoArabic {
                         if (xcounter > 3) throw new Exception("Неверное римское число");
                         break;
 
-                    case 'V'|'v':
+                    case 'V':
                         answer = processNumeral(5, previouseFigure, answer);
                         previouseFigure = 5;
                         vcounter++;
@@ -61,7 +61,7 @@ public class IntoArabic {
                         if (vcounter > 1) throw new Exception("Неверное римское число");
                         break;
 
-                    case 'I'|'i':
+                    case 'I':
                         answer = processNumeral(1, previouseFigure, answer);
                         previouseFigure = 1;
                         icounter++;
